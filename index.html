@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Photo editor</title>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Photo editor</h1>
+      <p>by Magdalena Michalska</p>
+    </div>
+    <div class="ustawienia">
+      <ul>
+        <li>
+          <p>Rozmycie</p>
+          <input class="slider" type="range" value="0" min="0" max="100" id="rozmycie">
+        </li>
+        <li>
+          <p>Jasność</p>
+          <input class="slider" type="range" value="100" min="0" max="100" id="jasnosc">
+        </li>
+        <li>
+          <p>Kontrast</p>
+          <input class="slider" type="range" value="12" min="0" max="100" id="kontrast">
+        </li>
+        <li>
+          <p>Skala szarości</p>
+          <input class="slider" type="range" value="0" min="0" max="100" id="skala">
+        </li>
+        <li>
+          <p>Saturacja</p>
+          <input class="slider" type="range" value="100" min="0" max="100" id="saturacja">
+        </li>
+        <li>
+          <p>Sepia</p>
+          <input class="slider" type="range" value="0" min="0" max="100" id="sepia">
+        </li>
+      </ul>
+    </div>
+    <div class="zdjecie"><img src="gorki.jpg" alt="Edytowane zdjęcie" id="zdjecie"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
